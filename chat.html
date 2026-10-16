@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { margin: 0; font-family: Arial; }
+.phone { width: 390px; margin: auto; height: 100vh; display: flex; flex-direction: column; }
+
+.top { background: green; color: white; padding: 10px; font-weight: bold; }
+
+.filters { display: flex; gap: 5px; padding: 8px; flex-wrap: wrap; }
+.filters div { background: lightgray; padding: 4px 10px; border-radius: 10px; font-size: 12px; }
+
+.list { flex: 1; }
+.row { display: flex; padding: 8px; border-bottom: 1px solid #ccc; }
+.pic { width: 40px; height: 40px; background: gray; border-radius: 50%; }
+.mid { flex: 1; padding-left: 8px; }
+.name { font-weight: bold; }
+.msg { font-size: 12px; color: gray; }
+.right { font-size: 10px; text-align: right; }
+.badge { background: green; color: white; border-radius: 50%; padding: 2px 5px; }
+
+.bottom { display: flex; border-top: 1px solid #ccc; }
+.bottom div { flex: 1; text-align: center; padding: 8px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="top">ChatApp</div>
+  
+  <div class="filters">
+    <div>All</div><div>Unread</div><div>Groups</div><div>Fav</div><div>Calls</div>
+  </div>
+  
+  <div class="list">
+    <div class="row">
+      <div class="pic"></div>
+      <div class="mid"><div class="name">Ali</div><div class="msg">kal milte hain</div></div>
+      <div class="right">10:30<br><span class="badge">2</span></div>
+    </div>
+    <div class="row">
+      <div class="pic"></div>
+      <div class="mid"><div class="name">Sara</div><div class="msg">assignment bhejo</div></div>
+      <div class="right">9:15</div>
+    </div>
+    <div class="row">
+      <div class="pic"></div>
+      <div class="mid"><div class="name">Ahmed</div><div class="msg">class kaisi thi</div></div>
+      <div class="right">8:00<br><span class="badge">1</span></div>
+    </div>
+    <div class="row">
+      <div class="pic"></div>
+      <div class="mid"><div class="name">Group</div><div class="msg">dinner time</div></div>
+      <div class="right">Yesterday</div>
+    </div>
+    <div class="row">
+      <div class="pic"></div>
+      <div class="mid"><div class="name">Teacher</div><div class="msg">homework</div></div>
+      <div class="right">Yesterday</div>
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <div>Chats</div><div>Status</div><div>Calls</div><div>Setting</div>
+  </div>
+</div>
+
+</body>
+</html>
